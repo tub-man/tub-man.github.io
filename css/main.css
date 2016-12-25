@@ -491,7 +491,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #457b9d; }
 
 h1 {
   font-size: 3em;
@@ -499,7 +500,6 @@ h1 {
 
 h2 {
   font-size: 2em;
-  color: #457b9d;
   margin: .5em 0;
   display: inline-block;
   line-height: 46px; }
@@ -668,34 +668,46 @@ blockquote {
         font-weight: normal;
         font-size: 1.2em; }
 
-.call-to-action ul {
+.call-to-action > ul {
   margin: 0;
   list-style: none; }
-  .call-to-action ul > li {
+  .call-to-action > ul > li {
     padding: 0; }
-    .call-to-action ul > li:nth-child(1) {
+    .call-to-action > ul > li:nth-child(1) {
       background: url("http://i.imgur.com/PUBkpUX.jpg") center left no-repeat;
       background-size: cover; }
-    .call-to-action ul > li:nth-child(2) {
+    .call-to-action > ul > li:nth-child(2) {
       background: url("http://i.imgur.com/cmEndMm.jpg") center left no-repeat;
       background-size: cover; }
-      .call-to-action ul > li:nth-child(2) .cta-inner {
+      .call-to-action > ul > li:nth-child(2) .cta-inner {
         float: right; }
-        .call-to-action ul > li:nth-child(2) .cta-inner .text {
+        .call-to-action > ul > li:nth-child(2) .cta-inner .text {
           float: left;
           padding: 2em 2em 2em 3em; }
-    .call-to-action ul > li .cta-inner {
+    .call-to-action > ul > li .cta-inner {
       width: 50%;
       float: left;
       background-color: rgba(168, 218, 220, 0.8); }
-      .call-to-action ul > li .cta-inner .text {
+      .call-to-action > ul > li .cta-inner .text {
         float: right;
         width: 60%;
         padding: 2em 3em 2em 0; }
-        .call-to-action ul > li .cta-inner .text h2 {
+        .call-to-action > ul > li .cta-inner .text h2 {
           color: white; }
-        .call-to-action ul > li .cta-inner .text p {
+        .call-to-action > ul > li .cta-inner .text p {
           color: #1d3557; }
+        .call-to-action > ul > li .cta-inner .text ul {
+          margin: 0 0 0 0;
+          list-style: none; }
+          .call-to-action > ul > li .cta-inner .text ul li {
+            padding-left: 1.3em; }
+            .call-to-action > ul > li .cta-inner .text ul li:before {
+              content: "\f058";
+              font-family: FontAwesome;
+              display: inline-block;
+              margin-left: -1.3em;
+              width: 1.3em;
+              color: green; }
 
 ul.ctas {
   margin: 0;

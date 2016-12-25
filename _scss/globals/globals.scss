@@ -29,6 +29,7 @@ a {
 h1,h2,h3,h4,h5,h6 {
     font-family: $font-heading;
     font-weight: bold;
+    color: $accent-color2;
 }
 
 h1 {
@@ -38,7 +39,6 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: $accent-color2;
     margin: .5em 0;
     display: inline-block;
     line-height: (20 * 2.3) + px;
@@ -261,7 +261,7 @@ blockquote {
 }
 
 .call-to-action {
-    ul {
+    &>ul {
         margin: 0;
         list-style: none;
         
@@ -303,6 +303,24 @@ blockquote {
                     
                     p {
                         color: $accent-color3;
+                    }
+
+                    ul {
+                        margin: 0 0 0 0;
+                        list-style: none;
+
+                        li {
+                            padding-left: 1.3em;
+
+                            &:before {
+                                content: "\f058";
+                                font-family: FontAwesome;
+                                display: inline-block;
+                                margin-left: -1.3em;
+                                width: 1.3em;
+                                color: green;
+                            }
+                        }
                     }
                 }                
             }
