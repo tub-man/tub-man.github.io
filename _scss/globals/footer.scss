@@ -1,6 +1,6 @@
 .footer {
+    position: relative;
     .footer-primary {
-        background-color: $accent-color1;
         padding: 1em 0;
 
         ul {
@@ -9,7 +9,6 @@
 
             &>li {
                 @include span-columns(4);
-                padding: 0;
 
                 h3 {
                     border-bottom: 1px solid $accent-color3;
@@ -19,14 +18,17 @@
                 h4 {
                     padding: .4em 0 0 0;
                 }
+
+                p {
+                    margin: 0;
+                }
             }
         }
     }
 
     .footer-secondary {
-        background-color: $accent-color2;
-        color: $primary-color;
-        padding: 1em 0; 
+        color: $accent-color3;
+        padding: 1em 0;
 
         p {
             margin: 0;

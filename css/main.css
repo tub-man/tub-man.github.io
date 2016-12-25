@@ -467,6 +467,16 @@ body {
   font-size: 125%;
   color: #1d3557;
   position: relative; }
+  body:before {
+    content: ' ';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60em;
+    position: absolute;
+    background: url("http://i.imgur.com/400yeP2.png") center center no-repeat;
+    background-size: cover; }
 
 .inner {
   max-width: 58em;
@@ -604,16 +614,16 @@ blockquote {
   quotes: "“" "”";
   position: relative; }
   blockquote:before {
-    font: Georgia;
+    font-family: Georgia;
     color: #457b9d;
     content: open-quote;
     font-size: 4em;
     line-height: 0;
     position: absolute;
-    top: .7em;
+    top: .5em;
     left: .2em; }
   blockquote:after {
-    font: Georgia;
+    font-family: Georgia;
     color: #457b9d;
     content: close-quote;
     font-size: 4em;
@@ -652,21 +662,27 @@ blockquote {
     margin: 0;
     list-style: none;
     text-align: center; }
-    .reviews ul ul.stars {
-      display: inline-block; }
-      .reviews ul ul.stars li {
-        float: left;
-        margin-right: .5em;
-        color: #e63946; }
     .reviews ul > li {
-      padding: 0; }
+      padding: 1em;
+      background-color: #f1faee; }
       .reviews ul > li blockquote {
-        margin: 1em 0 0 0; }
+        margin: 0;
+        border: 0; }
       .reviews ul > li h3 {
-        margin-top: .8em;
+        margin: .5em 0 0 0;
         text-align: right;
         font-weight: normal;
         font-size: 1.2em; }
+      .reviews ul > li ul.stars {
+        display: inline-block;
+        margin: 0 0 .5em 0; }
+        .reviews ul > li ul.stars li {
+          float: left;
+          margin-right: .5em;
+          padding: 0;
+          color: #e63946; }
+          .reviews ul > li ul.stars li .fa {
+            font-size: 1.3em; }
 
 .call-to-action > ul {
   margin: 0;
@@ -771,20 +787,18 @@ ul.ctas {
   .eyecatcher .title {
     display: block;
     text-align: center;
-    background: #a8dadc;
     color: white;
     padding: 1em 2em; }
     @media screen and (min-width: 1200px) {
       .eyecatcher .title {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         padding: 1em 2em;
         margin: 0;
         color: #fff;
-        background: rgba(168, 218, 220, 0.97);
         text-align: center;
         z-index: 100; } }
     .eyecatcher .title .site-title {
@@ -834,33 +848,33 @@ ul.ctas {
       .wrapper .content > section > p {
         margin-top: 1em; }
 
-.footer .footer-primary {
-  background-color: #f1faee;
-  padding: 1em 0; }
-  .footer .footer-primary ul {
-    list-style: none;
-    margin: 0; }
-    .footer .footer-primary ul > li {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      padding: 0; }
-      .footer .footer-primary ul > li:last-child {
-        margin-right: 0; }
-      .footer .footer-primary ul > li h3 {
-        border-bottom: 1px solid #1d3557;
-        padding: 0 0 .3em 0; }
-      .footer .footer-primary ul > li h4 {
-        padding: .4em 0 0 0; }
-
-.footer .footer-secondary {
-  background-color: #457b9d;
-  color: #a8dadc;
-  padding: 1em 0; }
-  .footer .footer-secondary p {
-    margin: 0;
-    text-align: center; }
+.footer {
+  position: relative; }
+  .footer .footer-primary {
+    padding: 1em 0; }
+    .footer .footer-primary ul {
+      list-style: none;
+      margin: 0; }
+      .footer .footer-primary ul > li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .footer .footer-primary ul > li:last-child {
+          margin-right: 0; }
+        .footer .footer-primary ul > li h3 {
+          border-bottom: 1px solid #1d3557;
+          padding: 0 0 .3em 0; }
+        .footer .footer-primary ul > li h4 {
+          padding: .4em 0 0 0; }
+        .footer .footer-primary ul > li p {
+          margin: 0; }
+  .footer .footer-secondary {
+    color: #1d3557;
+    padding: 1em 0; }
+    .footer .footer-secondary p {
+      margin: 0;
+      text-align: center; }
 
 .header {
   overflow: hidden;

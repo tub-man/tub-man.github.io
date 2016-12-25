@@ -3,6 +3,18 @@ body {
     font-size: 125%;
     color: $accent-color3;
     position: relative;
+
+    &:before {
+        content: ' ';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60em;
+        position: absolute;
+        background: url('http://i.imgur.com/400yeP2.png') center center no-repeat;
+        background-size: cover;
+    }
 }
 
 .inner {
@@ -171,18 +183,18 @@ blockquote {
   position: relative;
 
     &:before {
-        font: Georgia;
+        font-family: Georgia;
         color: $accent-color2;
         content: open-quote;
         font-size: 4em;
         line-height: 0;
         position: absolute;
-        top: .7em;
+        top: .5em;
         left: .2em;
     }
 
     &:after {
-        font: Georgia;
+        font-family: Georgia;
         color: $accent-color2;
         content: close-quote;
         font-size: 4em;
@@ -233,28 +245,36 @@ blockquote {
         list-style: none;
         text-align: center;
 
-        ul.stars {
-            display: inline-block;
-
-            li {
-                float: left;
-                margin-right: .5em;
-                color: $accent-color4;
-            }  
-        }
-
         &>li {
-            padding: 0;
+            padding: 1em;
+            background-color: $accent-color1;
 
             blockquote {
-                margin: 1em 0 0 0;
+                margin: 0;
+                border: 0;
             }
 
             h3 {
-                margin-top: .8em;
+                margin: .5em 0 0 0;
                 text-align: right;
                 font-weight: normal;
                 font-size: 1.2em;
+            }
+            
+            ul.stars {
+                display: inline-block;
+                margin: 0 0 .5em 0;
+
+                li {
+                    float: left;
+                    margin-right: .5em;
+                    padding: 0;
+                    color: $accent-color4;
+
+                    .fa {
+                        font-size: 1.3em;
+                    }
+                }  
             }
         }
     }
@@ -416,19 +436,17 @@ ul.ctas {
     .title {
         display: block;
         text-align: center;
-        background: $primary-color;
         color: white;
         padding: 1em 2em;
 
         @include media($desktop) {
             position: absolute;
-            top: 50%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%,-50%);
             padding: 1em 2em;
             margin: 0;
             color: #fff;
-            background: transparentize($primary-color,.03);
             text-align: center;
             z-index: 100;
         }
