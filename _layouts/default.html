@@ -15,6 +15,7 @@ layout: default
         {% include fonts.html %}
     </head>
     <body class="{{ page.name | remove: '.html' | remove: '.md' }}{% if page.date %}post{% endif %}">
+        {% include deal.html %}
         {% include header.html %}
         {% include thumbnail.html %}
         {% include eyecatcher.html %}

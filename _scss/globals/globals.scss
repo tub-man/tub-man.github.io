@@ -215,6 +215,16 @@ blockquote {
   clear: both;
 }
 
+.deal {
+    background-color: darken($accent-color4,10%);
+    color: $accent-color1;
+    
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
 .reviews {
     ul {
         margin: 0;

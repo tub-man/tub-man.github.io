@@ -639,6 +639,13 @@ blockquote {
   display: table;
   clear: both; }
 
+.deal {
+  background-color: #d21a28;
+  color: #f1faee; }
+  .deal p {
+    margin: 0;
+    text-align: center; }
+
 .reviews ul {
   margin: 0;
   list-style: none;
