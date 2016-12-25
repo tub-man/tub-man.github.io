@@ -3,3 +3,4 @@ highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 include: ["_pages"]
 navigation: ["home", "refinish", "repair", "about", "contact"]
+phone: 310-1010-4875

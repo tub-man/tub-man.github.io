@@ -12,7 +12,7 @@
     <ul>
     {% for page in site.navigation %}
         <li>
-            <a href="/{{ page }}">{{ page | replace: '-', ' ' }}</a>
+            <a href="/{% unless page contains 'home' %}{{ page }}{% endunless %}">{{ page | replace: '-', ' ' }}</a>
         </li>
     {% endfor %}
     </ul>
