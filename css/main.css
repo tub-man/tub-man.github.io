@@ -647,7 +647,8 @@ blockquote {
     display: inline-block; }
     .reviews ul ul.stars li {
       float: left;
-      margin-right: .5em; }
+      margin-right: .5em;
+      color: #e63946; }
   .reviews ul > li {
     padding: 0; }
     .reviews ul > li blockquote {
@@ -695,6 +696,10 @@ ul.ctas {
     padding: 0; }
     ul.ctas > li:last-child {
       margin-right: 0; }
+    ul.ctas > li h2 > i {
+      margin-left: -1.25em; }
+    ul.ctas > li:first-child h2 > i {
+      margin-left: -.8em; }
 
 .thumbnail-container > a {
   text-decoration: none; }

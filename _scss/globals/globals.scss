@@ -227,6 +227,7 @@ blockquote {
             li {
                 float: left;
                 margin-right: .5em;
+                color: $accent-color4;
             }  
         }
 
@@ -301,6 +302,16 @@ ul.ctas {
     &>li {
         @include span-columns(4);
         padding: 0;
+        
+        h2 {
+            &>i {
+                margin-left: -1.25em;
+            }
+        }
+
+        &:first-child h2 > i {
+            margin-left: -.8em;
+        }
     }
 }
 
