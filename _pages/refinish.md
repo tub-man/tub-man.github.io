@@ -2,7 +2,7 @@
 title: Refinish
 permalink: refinish/
 layout: default
-thumbnail: http://i.imgur.com/e6JLAYE.jpg
+thumbnail: http://i.imgur.com/400yeP2.png
 ---
 
 

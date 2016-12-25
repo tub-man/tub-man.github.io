@@ -2,7 +2,7 @@
 title: Repair
 permalink: repair/
 layout: default
-thumbnail: http://i.imgur.com/JL0t3LZ.jpg
+thumbnail: http://i.imgur.com/400yeP2.png
 ---
 
 ## Bring that old, broken tub back to life
