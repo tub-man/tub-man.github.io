@@ -1,0 +1,19 @@
+<nav class="mobile">
+    <a href="#"><span></span></a>
+    <ul>
+    {% for page in site.navigation %}
+        <li>
+            <a href="/{{ page }}">{{ page | replace: '-', ' ' }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
+<nav class="desktop">
+    <ul>
+    {% for page in site.navigation %}
+        <li>
+            <a href="/{{ page }}">{{ page | replace: '-', ' ' }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

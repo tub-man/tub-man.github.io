@@ -1,0 +1,16 @@
+{% if page %}
+    {% assign item = page %}
+{% endif %}
+{% if post %}
+    {% assign item = post %}
+{% endif %}
+
+{% if item.thumbnail  %}
+    {% if item.thumbnail contains '://' %}
+        {% assign thumbnail = item.thumbnail %}
+    {% else %}
+        {% assign thumbnail = '/assets/thumbnails/' | append: item.thumbnail %}
+    {% endif %}
+{% else %}
+    {% assign thumbnail = 'http://placekitten.com/1800/1200' %}
+{% endif %}

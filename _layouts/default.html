@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        {% include fonts.html %}
+    </head>
+    <body class="{{ page.name | remove: '.html' | remove: '.md' }}{% if page.date %}post{% endif %}">
+        {% include header.html %}
+        {% include thumbnail.html %}
+        {% include eyecatcher.html %}
+        <div class="wrapper">
+            <section class="content">
+                <section>
+                    {{ content }}
+                </section>
+            </section>            
+        </div>
+        {% include reviews.html %}
+        {% include footer.html %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+        <script src="https://use.fontawesome.com/22730cef00.js" defer></script>
+        <script src="/js/navigation.js" defer></script>
+        <script src="/js/jquery.flexslider-min.js"></script>
+    </body>
+</html>
