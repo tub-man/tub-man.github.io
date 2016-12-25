@@ -17,7 +17,7 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -73,7 +73,7 @@ gulp.task('scripts', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch(['_scss/*.scss', '_scss/globals/*.scss'], ['sass']);
+    gulp.watch(['_scss/*.scss', '_scss/**/*.scss', '_scss/**/*.css'], ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_pages/*', '_includes/*'], ['jekyll-rebuild']);
 });
 

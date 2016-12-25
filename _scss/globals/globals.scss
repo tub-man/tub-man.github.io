@@ -187,8 +187,8 @@ blockquote {
         content: close-quote;
         font-size: 4em;
         position: absolute;
-        right: 1em;
-        bottom: 0;
+        right: .2em;
+        bottom: -.07em;
     }
 
   p {
@@ -232,6 +232,14 @@ blockquote {
 
         &>li {
             padding: 0;
+
+            blockquote {
+                margin: 1em 0 0 0;
+            }
+
+            h3 {
+                text-align: right;
+            }
         }
     }
 }

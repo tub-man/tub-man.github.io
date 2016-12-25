@@ -2,4 +2,4 @@ name: Ronald Lovern
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 include: ["_pages"]
-navigation: ["refinish", "repair", "about", "contact"]
+navigation: ["home", "refinish", "repair", "about", "contact"]
