@@ -646,25 +646,27 @@ blockquote {
     margin: 0;
     text-align: center; }
 
-.reviews ul {
-  margin: 0;
-  list-style: none;
-  text-align: center; }
-  .reviews ul ul.stars {
-    display: inline-block; }
-    .reviews ul ul.stars li {
-      float: left;
-      margin-right: .5em;
-      color: #e63946; }
-  .reviews ul > li {
-    padding: 0; }
-    .reviews ul > li blockquote {
-      margin: 1em 0 0 0; }
-    .reviews ul > li h3 {
-      margin-top: .8em;
-      text-align: right;
-      font-weight: normal;
-      font-size: 1.2em; }
+.reviews {
+  padding: 2em 0; }
+  .reviews ul {
+    margin: 0;
+    list-style: none;
+    text-align: center; }
+    .reviews ul ul.stars {
+      display: inline-block; }
+      .reviews ul ul.stars li {
+        float: left;
+        margin-right: .5em;
+        color: #e63946; }
+    .reviews ul > li {
+      padding: 0; }
+      .reviews ul > li blockquote {
+        margin: 1em 0 0 0; }
+      .reviews ul > li h3 {
+        margin-top: .8em;
+        text-align: right;
+        font-weight: normal;
+        font-size: 1.2em; }
 
 .call-to-action ul {
   margin: 0;
