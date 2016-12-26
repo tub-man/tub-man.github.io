@@ -15,7 +15,7 @@ That is why repairing instead of replacing is the best alternative. The costs ar
 
 The repairs we do cover tears, scratches and or holes in:
 
-+ Bathtubs and shower made out of acrylic, quaryl and emaille
++ Bathtubs and shower made out of acrylic, quaryl and enamel
 + Steam cabins
 + Hot tubs and spa baths
 + Ceramic sinks
