@@ -3,18 +3,6 @@ body {
     font-size: 125%;
     color: $accent-color3;
     position: relative;
-
-    &:before {
-        content: ' ';
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 60em;
-        position: absolute;
-        background: url('http://i.imgur.com/400yeP2.png') center center no-repeat;
-        background-size: cover;
-    }
 }
 
 .inner {
@@ -246,7 +234,6 @@ blockquote {
         text-align: center;
 
         &>li {
-            background-color: $accent-color1;
             padding: 0;
 
             blockquote {
@@ -359,13 +346,7 @@ ul.ctas {
         padding: 0;
         
         h2 {
-            &>i {
-                margin-left: -1.35em;
-            }
-        }
-
-        &:first-child h2 > i {
-            margin-left: -.9em;
+        
         }
     }
 }
@@ -458,6 +439,7 @@ ul.ctas {
             color: $accent-color1;
             width: auto;
             font-size: 4em;
+            text-shadow: 4px 3px 0 $accent-color2, 9px 8px 0 rgba(0,0,0,0.15);
         }
 
         .site-description {
