@@ -694,15 +694,15 @@ blockquote {
     .call-to-action > ul > li .cta-inner {
       width: 50%;
       float: left;
-      background-color: rgba(168, 218, 220, 0.8); }
+      background-color: rgba(69, 123, 157, 0.8); }
       .call-to-action > ul > li .cta-inner .text {
         float: right;
         width: 60%;
         padding: 2em 3em 2em 0; }
         .call-to-action > ul > li .cta-inner .text h2 {
           color: white; }
-        .call-to-action > ul > li .cta-inner .text p {
-          color: #1d3557; }
+        .call-to-action > ul > li .cta-inner .text p, .call-to-action > ul > li .cta-inner .text ul, .call-to-action > ul > li .cta-inner .text h3 {
+          color: #f1faee; }
         .call-to-action > ul > li .cta-inner .text ul {
           margin: 0 0 0 0;
           list-style: none; }
@@ -714,7 +714,7 @@ blockquote {
               display: inline-block;
               margin-left: -1.3em;
               width: 1.3em;
-              color: green; }
+              color: lightgreen; }
 
 ul.ctas {
   margin: 0;

@@ -299,7 +299,7 @@ blockquote {
             .cta-inner {
                 width: 50%;
                 float: left;
-                background-color: transparentize($primary-color,.2);
+                background-color: transparentize($accent-color2,.2);
 
                 .text {
                     float: right;
@@ -310,8 +310,8 @@ blockquote {
                         color: white;
                     }
                     
-                    p {
-                        color: $accent-color3;
+                    p, ul, h3 {
+                        color: $accent-color1;
                     }
 
                     ul {
@@ -327,7 +327,7 @@ blockquote {
                                 display: inline-block;
                                 margin-left: -1.3em;
                                 width: 1.3em;
-                                color: green;
+                                color: lightgreen;
                             }
                         }
                     }
