@@ -2,5 +2,5 @@
 title: About me
 permalink: about/
 layout: default
-thumbnail: http://i.imgur.com/400yeP2.png
+thumbnail: http://i.imgur.com/NsHackQ.jpg
 ---

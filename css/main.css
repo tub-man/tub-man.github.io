@@ -663,19 +663,21 @@ blockquote {
     list-style: none;
     text-align: center; }
     .reviews ul > li {
-      padding: 1em;
-      background-color: #f1faee; }
+      background-color: #f1faee;
+      padding: 0; }
       .reviews ul > li blockquote {
         margin: 0;
         border: 0; }
       .reviews ul > li h3 {
         margin: .5em 0 0 0;
+        padding: 0 1em 1em 0;
         text-align: right;
         font-weight: normal;
-        font-size: 1.2em; }
+        font-size: 1.2em;
+        font-style: italic; }
       .reviews ul > li ul.stars {
         display: inline-block;
-        margin: 0 0 .5em 0; }
+        margin: 1em 0 .5em 0; }
         .reviews ul > li ul.stars li {
           float: left;
           margin-right: .5em;
@@ -737,9 +739,9 @@ ul.ctas {
     ul.ctas > li:last-child {
       margin-right: 0; }
     ul.ctas > li h2 > i {
-      margin-left: -1.25em; }
+      margin-left: -1.35em; }
     ul.ctas > li:first-child h2 > i {
-      margin-left: -.8em; }
+      margin-left: -.9em; }
 
 .thumbnail-container > a {
   text-decoration: none; }
@@ -792,7 +794,7 @@ ul.ctas {
     @media screen and (min-width: 1200px) {
       .eyecatcher .title {
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
@@ -803,7 +805,9 @@ ul.ctas {
         z-index: 100; } }
     .eyecatcher .title .site-title {
       margin: 0;
-      width: auto; }
+      color: #f1faee;
+      width: auto;
+      font-size: 4em; }
     .eyecatcher .title .site-description {
       color: #5fbbbf;
       background: transparent;

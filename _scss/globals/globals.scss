@@ -246,8 +246,8 @@ blockquote {
         text-align: center;
 
         &>li {
-            padding: 1em;
             background-color: $accent-color1;
+            padding: 0;
 
             blockquote {
                 margin: 0;
@@ -256,14 +256,16 @@ blockquote {
 
             h3 {
                 margin: .5em 0 0 0;
+                padding: 0 1em 1em 0;
                 text-align: right;
                 font-weight: normal;
                 font-size: 1.2em;
+                font-style: italic;
             }
             
             ul.stars {
                 display: inline-block;
-                margin: 0 0 .5em 0;
+                margin: 1em 0 .5em 0;
 
                 li {
                     float: left;
@@ -358,12 +360,12 @@ ul.ctas {
         
         h2 {
             &>i {
-                margin-left: -1.25em;
+                margin-left: -1.35em;
             }
         }
 
         &:first-child h2 > i {
-            margin-left: -.8em;
+            margin-left: -.9em;
         }
     }
 }
@@ -441,7 +443,7 @@ ul.ctas {
 
         @include media($desktop) {
             position: absolute;
-            top: 30%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             padding: 1em 2em;
@@ -453,7 +455,9 @@ ul.ctas {
 
         .site-title {
             margin: 0;
+            color: $accent-color1;
             width: auto;
+            font-size: 4em;
         }
 
         .site-description {
