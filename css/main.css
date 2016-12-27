@@ -766,9 +766,9 @@ ul.ctas {
   position: relative; }
   @media screen and (min-width: 1200px) {
     .eyecatcher {
-      height: 50vh; }
+      height: 30vh; }
       .eyecatcher img {
-        height: 50vh;
+        height: 30vh;
         object-fit: cover; } }
   .eyecatcher .title {
     display: block;
@@ -849,7 +849,8 @@ ul.faqs {
   ul.faqs > li {
     padding: 0; }
     ul.faqs > li p:first-child {
-      background-color: #a8dadc; }
+      background-color: #a8dadc;
+      margin-bottom: .5em; }
       ul.faqs > li p:first-child:before {
         content: "\f055";
         display: inline-block;
@@ -860,6 +861,9 @@ ul.faqs {
         -moz-osx-font-smoothing: grayscale;
         margin-right: .5em;
         color: #1d3557; }
+    ul.faqs > li p:nth-child(2) {
+      display: none;
+      padding: .5em 1em 1em 1em; }
   ul.faqs p {
     padding: .5em 1em;
     margin: 0; }

@@ -408,9 +408,9 @@ ul.ctas {
     position: relative;
 
     @include media($desktop) {
-        height: 50vh;
+        height: 30vh;
         img {
-            height: 50vh;
+            height:30vh;
             object-fit: cover;
         }    
     }
@@ -498,6 +498,7 @@ ul.faqs {
 
         p:first-child {
             background-color: $primary-color;
+            margin-bottom: .5em;
 
             &:before {
                 content: "\f055";
@@ -511,6 +512,11 @@ ul.faqs {
                 color: $accent-color3;
             }
         }
+
+        p:nth-child(2) {
+            display: none;
+            padding: .5em 1em 1em 1em;
+        }  
     }
 
     p {

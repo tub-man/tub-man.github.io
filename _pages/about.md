@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Us
 permalink: about/
 layout: default
 thumbnail: http://i.imgur.com/NsHackQ.jpg
@@ -14,7 +14,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum temporibus minim
 
 ## Warranties
 
-{{ site.company }} provides a X year limited warrranty on Y an Z.
+{{ site.company }} provides a X year limited warranty on Y an Z.
 
 ## FAQ's
 
