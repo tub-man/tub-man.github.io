@@ -40,7 +40,6 @@ h1 {
 h2 {
     font-size: 2em;
     margin: .5em 0;
-    display: inline-block;
     line-height: (20 * 2.3) + px;
 }
 
@@ -139,7 +138,7 @@ img {
 }
 
 .img-small {
-    width: 20em;
+    width: 15em;
     height: auto;
     margin: 0 1em 1em 0;
 }
@@ -486,5 +485,36 @@ ul.ctas {
                 margin-top: 1em;
             }
         }
+    }
+}
+
+ul.faqs {
+    list-style: none;
+    margin: 0;
+    @include span-columns(8);
+
+    &>li {
+        padding: 0;
+
+        p:first-child {
+            background-color: $primary-color;
+
+            &:before {
+                content: "\f055";
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                margin-right: .5em;
+                color: $accent-color3;
+            }
+        }
+    }
+
+    p {
+        padding: .5em 1em;
+        margin: 0;
     }
 }

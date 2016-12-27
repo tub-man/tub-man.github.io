@@ -501,7 +501,6 @@ h1 {
 h2 {
   font-size: 2em;
   margin: .5em 0;
-  display: inline-block;
   line-height: 46px; }
 
 h3 {
@@ -578,7 +577,7 @@ img {
             transform: translate(0, 4px); }
 
 .img-small {
-  width: 20em;
+  width: 15em;
   height: auto;
   margin: 0 1em 1em 0; }
 
@@ -837,6 +836,33 @@ ul.ctas {
           margin: 0; } }
       .wrapper .content > section > p {
         margin-top: 1em; }
+
+ul.faqs {
+  list-style: none;
+  margin: 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  ul.faqs:last-child {
+    margin-right: 0; }
+  ul.faqs > li {
+    padding: 0; }
+    ul.faqs > li p:first-child {
+      background-color: #a8dadc; }
+      ul.faqs > li p:first-child:before {
+        content: "\f055";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-right: .5em;
+        color: #1d3557; }
+  ul.faqs p {
+    padding: .5em 1em;
+    margin: 0; }
 
 .footer {
   position: relative;
