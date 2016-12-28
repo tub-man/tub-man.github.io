@@ -626,16 +626,6 @@ blockquote {
     margin: 0;
     color: #457b9d; }
 
-.stuck {
-  position: fixed;
-  margin: 0 !important;
-  top: 2em; }
-
-.stuck-bottom {
-  position: absolute;
-  top: initial;
-  bottom: 0; }
-
 .group:after {
   content: "";
   display: table;
@@ -1129,6 +1119,16 @@ ul.faqs {
           text-decoration: none; }
           .header nav.desktop ul li a:hover {
             color: #e63946; }
+    .header nav.desktop.stuck {
+      position: fixed;
+      margin: 0 !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+      z-index: 500;
+      box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5); }
     @media screen and (max-width: 500px) {
       .header nav.desktop {
         display: none; } }
