@@ -1,5 +1,6 @@
 ---
-title: About Us
+title: About
+description: Learn what we are all about
 permalink: about/
 layout: default
 thumbnail: http://i.imgur.com/NsHackQ.jpg

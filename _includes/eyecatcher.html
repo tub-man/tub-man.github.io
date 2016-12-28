@@ -28,14 +28,14 @@
 </section>
 {% else %}
 <section class="eyecatcher">
+    <img src="{{thumbnail}}" alt="{{page.title}}">
     <section class="title">
         <h1 class="site-title">
-            {{ page.title }}
+            <span>{{ page.title }}</span>
         </h1>
         <h2 class="site-description">
-            {{ page.subtitle }}
+            {{ page.description }}
         </h2>
-    </section>
-    <img src="{{thumbnail}}" alt="{{page.title}}">
+    </section>    
 </section>
 {% endif %}

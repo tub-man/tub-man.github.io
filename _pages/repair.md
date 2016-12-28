@@ -1,11 +1,10 @@
 ---
 title: Repair
+description: Bring your broken tub back to life
 permalink: repair/
 layout: default
 thumbnail: http://i.imgur.com/JL0t3LZ.jpg
 ---
-
-## Bring that old, broken tub back to life
 
 The bathtub is often a costly part of the residence. A small accident can cause major damage. Replacing a bathtub conventionally is paired with a lot of ruckus. Let alone the costs and consequential damages that comes with it.
 

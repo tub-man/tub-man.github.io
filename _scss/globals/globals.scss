@@ -408,7 +408,6 @@ ul.ctas {
     position: relative;
 
     @include media($desktop) {
-        height: 30vh;
         img {
             height:30vh;
             object-fit: cover;
@@ -418,45 +417,48 @@ ul.ctas {
     .title {
         display: block;
         text-align: center;
-        color: white;
-        padding: 1em 2em;
-
-        @include media($desktop) {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 1em 2em;
-            margin: 0;
-            color: #fff;
-            text-align: center;
-            z-index: 100;
-        }
+        padding: 1em 0;
+        @include outer-container(58em);
 
         .site-title {
             margin: 0;
-            color: $accent-color1;
+            color: $accent-color2;
             width: auto;
-            font-size: 4em;
-            text-shadow: 4px 3px 0 $accent-color2, 9px 8px 0 rgba(0,0,0,0.15);
+            font-size: 4em; 
+            overflow: hidden;
+            text-align: center;
+
+            span {
+                position: relative;  
+            }
+            span:before,
+            span:after {
+                $linesHeight: 7px;
+                content: "";
+                position: absolute;
+                border-bottom: 1px solid $accent-color2;
+                border-top: 1px solid $accent-color2;
+                width: 600px;
+                height: $linesHeight;
+                top: 50%;
+                margin-top: floor(-$linesHeight / 2);
+            }
+            span:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+            span:after {
+                left: 100%;
+                margin-left: 15px;
+            }                    
         }
 
         .site-description {
-            color: darken($primary-color, 20%);
-            background: transparent;
+            color: $accent-color3;
             font-size: 1.6em;
             margin: 0;
             padding: 0;
             display: block;
-
-            &:before {
-                height: 2px;
-                width: 2em;
-                display: block;
-                content: '';
-                background-color: darken($primary-color, 10%);
-                margin: .85em auto;
-            }
         }
     }
 }
