@@ -6,8 +6,6 @@ layout: default
 thumbnail: http://i.imgur.com/NsHackQ.jpg
 ---
 
-## {{ page.title }}
-
 {:.group}
 ![Ronald](http://i.imgur.com/jlPM3jv.jpg "Ronald"){:.img-small .flt-left}
 Since 1991, {{ site.company }} is a licensed contractor with the State of Virginia. We are listed as XYZ LLC. We do not use subcontractors.    

@@ -3,9 +3,11 @@ title: Repair
 description: Bring your broken tub back to life
 permalink: repair/
 layout: default
-thumbnail: http://i.imgur.com/JL0t3LZ.jpg
+thumbnail: http://i.imgur.com/Xx0xhlx.jpg
 ---
 
+{:.group}
+![Tiling](http://i.imgur.com/JL0t3LZl.jpg "Tiling"){:.img-small .flt-right}
 The bathtub is often a costly part of the residence. A small accident can cause major damage. Replacing a bathtub conventionally is paired with a lot of ruckus. Let alone the costs and consequential damages that comes with it.
 
 {:.group}

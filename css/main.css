@@ -576,16 +576,19 @@ img {
     -webkit-transform: translate(0, 4px);
             transform: translate(0, 4px); }
 
-.img-small {
-  width: 15em;
-  height: auto;
-  margin: 0 1em 1em 0; }
-
 .flt-right {
   float: right; }
+  .flt-right.img-small {
+    width: 15em;
+    height: auto;
+    margin: 0 0 1em 1em; }
 
 .flt-left {
   float: left; }
+  .flt-left.img-small {
+    width: 15em;
+    height: auto;
+    margin: 0 1em 1em 0; }
 
 em {
   font-style: italic; }

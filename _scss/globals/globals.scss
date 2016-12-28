@@ -137,18 +137,24 @@ img {
     }
 }
 
-.img-small {
-    width: 15em;
-    height: auto;
-    margin: 0 1em 1em 0;
-}
-
 .flt-right {
     float: right;
+
+    &.img-small {
+        width: 15em;
+        height: auto;
+        margin: 0 0 1em 1em;
+    }
 }
 
 .flt-left {
     float: left;
+    
+    &.img-small {
+        width: 15em;
+        height: auto;
+        margin: 0 1em 1em 0;
+    }    
 }
 
 em {
