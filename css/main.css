@@ -786,13 +786,19 @@ ul.ctas {
       margin: 0;
       color: #457b9d;
       width: auto;
-      font-size: 4em;
+      font-size: 4em; }
+    .eyecatcher .title .site-description {
+      color: #1d3557;
+      font-size: 1.6em;
+      margin: 0;
+      padding: 0;
+      display: block;
       overflow: hidden;
       text-align: center; }
-      .eyecatcher .title .site-title span {
+      .eyecatcher .title .site-description span {
         position: relative; }
-      .eyecatcher .title .site-title span:before,
-      .eyecatcher .title .site-title span:after {
+      .eyecatcher .title .site-description span:before,
+      .eyecatcher .title .site-description span:after {
         content: "";
         position: absolute;
         border-bottom: 1px solid #457b9d;
@@ -801,18 +807,12 @@ ul.ctas {
         height: 7px;
         top: 50%;
         margin-top: -4px; }
-      .eyecatcher .title .site-title span:before {
+      .eyecatcher .title .site-description span:before {
         right: 100%;
         margin-right: 15px; }
-      .eyecatcher .title .site-title span:after {
+      .eyecatcher .title .site-description span:after {
         left: 100%;
         margin-left: 15px; }
-    .eyecatcher .title .site-description {
-      color: #1d3557;
-      font-size: 1.6em;
-      margin: 0;
-      padding: 0;
-      display: block; }
 
 .wrapper {
   position: relative; }

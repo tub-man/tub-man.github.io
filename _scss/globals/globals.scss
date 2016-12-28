@@ -430,7 +430,15 @@ ul.ctas {
             margin: 0;
             color: $accent-color2;
             width: auto;
-            font-size: 4em; 
+            font-size: 4em;                    
+        }
+
+        .site-description {
+            color: $accent-color3;
+            font-size: 1.6em;
+            margin: 0;
+            padding: 0;
+            display: block;
             overflow: hidden;
             text-align: center;
 
@@ -456,15 +464,7 @@ ul.ctas {
             span:after {
                 left: 100%;
                 margin-left: 15px;
-            }                    
-        }
-
-        .site-description {
-            color: $accent-color3;
-            font-size: 1.6em;
-            margin: 0;
-            padding: 0;
-            display: block;
+            }             
         }
     }
 }

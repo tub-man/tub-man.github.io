@@ -1,6 +1,6 @@
 ---
 title: Refinish
-description: Because your deserve it.
+description: Because your deserve it
 permalink: refinish/
 layout: default
 thumbnail: http://i.imgur.com/jA2L2kA.jpg
