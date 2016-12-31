@@ -1136,7 +1136,7 @@ ul.faqs {
           padding: 1em;
           color: #1d3557;
           text-decoration: none; }
-          .header nav.desktop ul li a:hover {
+          .header nav.desktop ul li a:hover, .header nav.desktop ul li a.active {
             color: #e63946; }
     .header nav.desktop.stuck {
       position: fixed;

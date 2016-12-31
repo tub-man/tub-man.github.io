@@ -245,7 +245,8 @@
                     color: $accent-color3;
                     text-decoration: none;
 
-                    &:hover {
+                    &:hover,
+                    &.active {
                         color: $accent-color4;
                     }
                 }

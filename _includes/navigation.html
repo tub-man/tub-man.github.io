@@ -10,9 +10,17 @@
 </nav>
 <nav class="desktop">
     <ul>
-    {% for page in site.navigation %}
+    {% for item in site.navigation %}
         <li>
-            <a href="/{% unless page contains 'home' %}{{ page }}{% endunless %}">{{ page | replace: '-', ' ' }}</a>
+            {% if page.url contains item or item contains 'home' and page.url == '/' %}
+                <a href="/{% unless item contains 'home' %}{{ item }}{% endunless %}" class="active">
+                    {{ item | replace: '-', ' ' }}
+                </a>
+            {% else %}
+                <a href="/{% unless item contains 'home' %}{{ item }}{% endunless %}">
+                    {{ item | replace: '-', ' ' }}
+                </a>
+            {% endif %}
         </li>
     {% endfor %}
     </ul>
