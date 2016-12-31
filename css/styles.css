@@ -974,7 +974,8 @@ ul.faqs {
     margin: 0 0 1em 0; }
   .header h3 {
     color: #f1faee;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-bottom: .5em; }
   .header a {
     border: none; }
   .header .inner {
@@ -1059,6 +1060,9 @@ ul.faqs {
       margin-right: 0; }
     .header .phone .text {
       float: right; }
+      .header .phone .text em {
+        font-style: normal;
+        color: #e63946; }
   .header nav {
     background-color: white;
     z-index: 500;
