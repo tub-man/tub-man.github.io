@@ -1,10 +1,22 @@
 .header {
     overflow: hidden;
-    background-color: $primary-color;
+    background-image: 
+        url("http://i.imgur.com/rCPa5jX.png");
     color: $accent-color2;
     position: relative;
     font-size: 1.2em;
     font-family: $font-heading;
+
+    &:before {
+        content: '';
+        background: darken($primary-color,30%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: .4;
+    }
 
     h2, h3 {
         font-size: 1em;
@@ -27,6 +39,8 @@
     .logo {
         @include span-columns(5);
         display: inline-block;
+        z-index: 10;
+        position: relative;
         
         a {
             color: $accent-color2;
@@ -102,6 +116,8 @@
 
     .phone {
         @include span-columns(5);
+        z-index: 10;
+        position: relative;
 
         .text {
             float: right;
@@ -110,6 +126,8 @@
 
     nav {
         background-color: lighten($primary-color, 30%);
+        z-index: 500;
+        position: relative;
     }
 
     nav.mobile {
