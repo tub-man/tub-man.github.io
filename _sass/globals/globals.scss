@@ -491,10 +491,13 @@ ul.faqs {
 
     &>li {
         padding: 0;
+        border-top: 1px solid $accent-color2;
+        background-color: $accent-color1;
 
         p:first-child {
             background-color: $primary-color;
-            margin-bottom: .5em;
+            margin-bottom: 0;
+            cursor: pointer;
 
             &:before {
                 content: "\f055";
@@ -506,13 +509,34 @@ ul.faqs {
                 -moz-osx-font-smoothing: grayscale;
                 margin-right: .5em;
                 color: $accent-color3;
+                transition: color .3s linear;
             }
         }
 
         p:nth-child(2) {
             display: none;
-            padding: .5em 1em 1em 1em;
-        }  
+            padding: 1em;
+        }
+
+        &:first-child {
+            border: 0;
+        }
+
+        &.active {
+            p:first-child {
+                &:before {
+                    content: "\f056";
+                }
+            }
+        }
+
+        &:hover {
+            p:first-child {
+                &:before {
+                    color: $accent-color4;
+                }
+            }            
+        }
     }
 
     p {

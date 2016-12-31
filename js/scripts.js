@@ -1,6 +1,6 @@
 $(function() {
     $('.faqs li p:first-child').on('click', function() {
-        $(this).next().stop().slideToggle();
+        $(this).next().stop().slideToggle().parent().toggleClass('active');
     });
 });
 /**

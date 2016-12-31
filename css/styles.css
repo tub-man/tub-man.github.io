@@ -843,10 +843,13 @@ ul.faqs {
   ul.faqs:last-child {
     margin-right: 0; }
   ul.faqs > li {
-    padding: 0; }
+    padding: 0;
+    border-top: 1px solid #457b9d;
+    background-color: #f1faee; }
     ul.faqs > li p:first-child {
       background-color: #a8dadc;
-      margin-bottom: .5em; }
+      margin-bottom: 0;
+      cursor: pointer; }
       ul.faqs > li p:first-child:before {
         content: "\f055";
         display: inline-block;
@@ -856,10 +859,17 @@ ul.faqs {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         margin-right: .5em;
-        color: #1d3557; }
+        color: #1d3557;
+        transition: color .3s linear; }
     ul.faqs > li p:nth-child(2) {
       display: none;
-      padding: .5em 1em 1em 1em; }
+      padding: 1em; }
+    ul.faqs > li:first-child {
+      border: 0; }
+    ul.faqs > li.active p:first-child:before {
+      content: "\f056"; }
+    ul.faqs > li:hover p:first-child:before {
+      color: #e63946; }
   ul.faqs p {
     padding: .5em 1em;
     margin: 0; }
