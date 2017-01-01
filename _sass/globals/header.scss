@@ -90,16 +90,17 @@
                 position: relative;
 
                 &:first-child {
-                    margin-top: -.5em;
-                    padding: 0 0 .3em 0;
+                    margin-top: -.8em;
+                    padding: 0 0 .2em 0;
                     color: $accent-color2;
                 }
 
                 em {
                     font-style: normal;
-                    font-size: 3em;
+                    font-size: 3.5em;
                     font-weight: bold;
                     text-shadow: -1px -2px 0 darken($accent-color5,15%);
+                    font-family: $font-copy;
                 }
 
                 &:last-child {
